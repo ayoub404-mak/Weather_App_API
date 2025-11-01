@@ -1,4 +1,4 @@
-//http://api.weatherapi.com/v1/current.json?key=02f783fc8df143f8b7763013252810&q=London&aqi=no
+//http://api.weatherapi.com/v1/current.json?key=(MYIPA)&q=London&aqi=no
 
 
 const temperatureField = document.querySelector(".temp");
@@ -17,7 +17,7 @@ let target = 'Lucknow'
 
 const fetchResults = async (targetLocation) =>{
     
-    let url = `https://api.weatherapi.com/v1/current.json?key=02f783fc8df143f8b7763013252810&q=${targetLocation}&aqi=no`
+    let url = `https://api.weatherapi.com/v1/current.json?key=(MYAPI)&q=${targetLocation}&aqi=no`
     
     const res = await fetch(url)
 
